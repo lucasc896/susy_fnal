@@ -354,7 +354,7 @@ class Analysis:
         script_dir = os.getcwd()
         script_name = sys.argv[0]
         script_str = "#!/bin/sh\nsource /uscmst1/prod/sw/cms/cmsset_default.sh\nsource %s/setup.sh\ncd %s\ncmsenv\ncd %s\n%s -j %s -J %s -S %s\n"
-        condorDescrip_str ='universe = vanilla\nExecutable = %s\nArguments = $(Process)\nRequirements = target.OpSys == "LINUX"\nShould_Transfer_Files = YES\nWhenToTransferOutput = ON_EXIT\nTransfer_Input_Files = /uscms_data/d3/clucas/susy_work/SusyCAF_Tree_1025_1_GFx.root\nOutput = %s/%s/output/%s_$(Cluster)_$(Process).stdout\nError = %s/%s/output/%s_$(Cluster)_$(Process).stderr\nLog = %s/%s_$(Cluster)_$(Process).log\nqueue %d'%(dir_name+"/job.sh",script_dir, dir_name, script_name, script_dir, dir_name, script_name, dir_name, script_name, len(jobs["jobs"]))
+        condorDescrip_str ='universe = vanilla\nExecutable = %s\nArguments = $(Process)\nRequirements = target.OpSys == "LINUX"\nShould_Transfer_Files = YES\nWhenToTransferOutput = ON_EXIT\nOutput = %s/%s/output/%s_$(Cluster)_$(Process).stdout\nError = %s/%s/output/%s_$(Cluster)_$(Process).stderr\nLog = %s/%s_$(Cluster)_$(Process).log\nqueue %d'%(dir_name+"/job.sh",script_dir, dir_name, script_name, script_dir, dir_name, script_name, dir_name, script_name, len(jobs["jobs"]))
         open(dir_name+"/job.sh","w").write(script_str %(susy_working_dir,
 							susy_working_dir+"/../CMSSW_5_0_0/src",
                                                         script_dir,
