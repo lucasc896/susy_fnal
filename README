@@ -1,0 +1,21 @@
++++++++++++ SUSY ICF CODE @ FNAL +++++++++++
+Written by Chris Lucas
+Last Updated: 05/04/12
+++++++++++++++++++++++++++++++++++++++++++++
+
+Log in to FNAL
+cd nobackup
+svn co svn+ssh://<yourusername>@svn.cern.ch/reps/icfsusy/trunk/AnalysisV2 SUSYv2
+cd ./SUSYv2
+./configure.py *** Make sure to choose "SLC5 (FNAL) - 64 bit" ***
+source ./setup.csh
+cd ../
+PULL REPO FROM GIT
+cp susy_fnal/framework_new/core.py SUSYv2/framework/python/icf/.
+cp susy_fnal/samples_new/WW_TuneZ2_7TeV_pythia6_tauola_Fall11_PU_S6_START42_V14B_v1.py SUSYv2/samples/python/montecarlo/Summer11/.
+
+make everything
+
+go into your favourite analysis package
+
+./<your_executable> -b -n50
