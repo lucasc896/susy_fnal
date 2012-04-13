@@ -1,0 +1,10 @@
+universe = vanilla
+Executable = __susyJob__bMulti.py_20120413_09_20_42/job.sh
+Arguments = $(Process)
+Requirements = target.OpSys == "LINUX"
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Output = /uscms_data/d3/clucas/susy_test/SUSYv2/chris_truth/python/__susyJob__bMulti.py_20120413_09_20_42/output/./bMulti.py_$(Cluster)_$(Process).stdout
+Error = /uscms_data/d3/clucas/susy_test/SUSYv2/chris_truth/python/__susyJob__bMulti.py_20120413_09_20_42/output/./bMulti.py_$(Cluster)_$(Process).stderr
+Log = __susyJob__bMulti.py_20120413_09_20_42/./bMulti.py_$(Cluster)_$(Process).log
+queue 25
