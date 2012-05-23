@@ -13,10 +13,6 @@ cp susy_fnal/configure.py SUSYv2/.
 
 ./SUSYv2/configure.py *** Make sure to choose "SLC5 (FNAL) - 64 bit" ***
 source ./SUSYv2/setup.csh
-cmsrel CMSSW_5_0_0
-cd CMSSW_5_0_0/src
-cmsenv
-cd ../../SUSYv2
 
 make everything
 
