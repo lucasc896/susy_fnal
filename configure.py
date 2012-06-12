@@ -32,19 +32,19 @@ def prompt(install,var,name):
 
 # SLC4 64 bit installation defaults
 slc4_64={"name":"SLC5 (FNAL) - 64 bit",
-    "platform" : (False,"linux"),
-    "root_sys" : (True,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/"),
-    "root_sys_inc" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/include"),
-    "root_sys_lib" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/lib"),
-    "root_sys_bin" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/bin"),
-    "python_inc" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/include/python2.6"),
-    "python_lib" : (False,"-lpython2.4"),
-    "boost_python_lib" : (False,"-lboost_python"),
-    "root_extra_libs" : (False,"-lMathCore -lMathMore -lGenVector"),
-    "link_search_extra" : (False,"-L/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/lib/ -L/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/boost/1.44.0-cms3/lib/"),
-    "incdir_extra" : (False,"-I/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/include/ -I/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/boost/1.44.0-cms3/include/"),
-    "ld_path_extra" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/gcc/4.6.2/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/libjpg/8b/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/python/2.6.4/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/boost/1.47.0//lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/gcc/4.6.2/lib64:/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/xrootd/3.1.0-cms2/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/xz/5.0.3/lib:/opt/gLite/d-cache/dcap/lib:/opt/gLite/globus/lib:/opt/gLite/globus/lib:/opt/gLite/lcg/lib"),
-    "python_env" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc462/external/python/2.6.4/bin"),
+   "platform" : (False,"linux"),
+   "root_sys" : (True,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/"),
+   "root_sys_inc" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/include"),
+   "root_sys_lib" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/lib"),
+   "root_sys_bin" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.30.02-cms/bin"),
+   "python_inc" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/include/python2.6"),
+   "python_lib" : (False,"-lpython2.4"),
+   "boost_python_lib" : (False,"-lboost_python"),
+   "root_extra_libs" : (False,"-lMathCore -lMathMore -lGenVector"),
+   "link_search_extra" : (False,"-L/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/lib/ -L/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/boost/1.44.0-cms3/lib/"),
+   "incdir_extra" : (False,"-I/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/include/ -I/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/boost/1.44.0-cms3/include/"),
+   "ld_path_extra" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/libjpg/8b/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/boost/1.44.0-cms3/lib:/opt/gLite/d-cache/dcap/lib64:/opt/gLite/d-cache/dcap/lib:/opt/gLite/globus/lib:/opt/gLite/globus/lib:/opt/gLite/lcg/lib:/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/gcc/4.3.4/lib64:/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/xrootd/5.28.00d/lib"),
+   "python_env" : (False,"/uscmst1/prod/sw/cms/slc5_amd64_gcc434/external/python/2.6.4-cms14/bin"),
 }
 
 # SLC4 32 bit - just change name and ROOT version
