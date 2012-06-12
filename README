@@ -14,6 +14,7 @@ cp susy_fnal/configure.py SUSYv2/.
 ./SUSYv2/configure.py *** Make sure to choose "SLC5 (FNAL) - 64 bit" ***
 source ./SUSYv2/setup.csh
 
+edit the file "Makefile_Debug.inc" to change the "CXX" statement near the top of the file
 make everything
 
 go into your favourite analysis package or use mine (directions below)
