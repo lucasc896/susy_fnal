@@ -7,14 +7,19 @@ Log in to FNAL
 cd nobackup
 svn co svn+ssh://<yourusername>@svn.cern.ch/reps/icfsusy/trunk/AnalysisV2 SUSYv2
 PULL REPO FROM GIT
+cmsrel CMSSW_5_0_0
 cp susy_fnal/framework_new/core.py SUSYv2/framework/python/icf/.
 cp susy_fnal/samples_new/WW_TuneZ2_7TeV_pythia6_tauola_Fall11_PU_S6_START42_V14B_v1.py SUSYv2/samples/python/montecarlo/Summer11/.
 cp susy_fnal/configure.py SUSYv2/.
 
 ./SUSYv2/configure.py *** Make sure to choose "SLC5 (FNAL) - 64 bit" ***
 source ./SUSYv2/setup.csh
+cd CMSSW_5_0_0/src
+cmsenv
+cd ../../SUSYv2
 
 edit the file "Makefile_Debug.inc" to change the "CXX" statement near the top of the file
+also in this file remove the "-std=c++0x" arguement from "CXXFLAGS"
 make everything
 
 go into your favourite analysis package or use mine (directions below)
